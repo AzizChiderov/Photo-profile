@@ -70,15 +70,16 @@ wrapper.addEventListener("click", () => {
   form.reset();
 });
 
+let obj = {}
 modalBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  
+  obj.name = form.elements.name.value;
+  obj.email = form.elements.email.value;
+  obj.about = form.elements.text.value;
 
-  const name = form.elements.name.value;
-  const email = form.elements.email.value;
-  const about = form.elements.text.value;
-
-  console.log(`Name: ${name}`);
-  console.log(`Email: ${email}`);
-  console.log(`Info: ${about}`);
+  console.log(obj);
+  wrapper.style.display = "none";
+  modal.style.display = "none";
   form.reset();
 });
