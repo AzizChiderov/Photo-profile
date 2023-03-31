@@ -1,0 +1,145 @@
+.wrapper {
+    position: fixed;
+    background-color: #19849B4D;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modal .icon-x {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+}
+
+.icon-x:hover {
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    background-color: #272a2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 0 44px;
+    z-index: 20;
+}
+
+.modal h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+}
+
+.modal p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
+
+.modal input[type='name'] {
+    width: 30%;
+}
+
+.modal input {
+    border: none;
+    width: 60%;
+    height: 50px;
+    background-color: #324b53;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    padding-left: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.modal:checked:after {
+    background-color: #324b53;
+}
+
+#about {
+    border: none;
+    width: 94%;
+    height: 219px;
+    background: #324b53;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    padding: 16px 22px 0 22px;
+}
+
+.modal button {
+    background-color: #272a2f;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.15px;
+    width: 217px;
+    height: 50px;
+    border-color: #ffff;
+    margin-top: 30px;
+}
+
+.modal {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .modal {
+        width: 60%;
+    }
+
+    .modal input[type='name'] {
+        width: 100%;
+    }
+
+    .modal input {
+        width: 100%;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .modal {
+        padding: 20px 20px;
+        width: 80%;
+    }
+
+    .modal input[type='name'] {
+        width: 100%;
+    }
+
+    .modal input {
+        width: 100%;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,296 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+  @import url(./modal.css);
+  @import url(./img.css);
+
+
+  * {
+      color: #ffff;
+      font-family: 'Ubuntu', sans-serif;
+      font-style: normal;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+
+  body {
+      background-color: #272A2F;
+      z-index: 0;
+  }
+
+  section {
+      padding: 0 20px;
+  }
+
+  .header {
+      position: fixed;
+      background-color: #19849B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 58px;
+      top: 0;
+      z-index: 5;
+  }
+
+  .header .logo {
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+  }
+
+  .subtitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 355px;
+      margin-top: 109px;
+  }
+
+  .subtitle .photo-main {
+      width: 411px;
+      margin-right: 68px;
+  }
+
+  .subtitle-introduce {
+      display: flex;
+      flex-direction: column;
+      width: 559px;
+  }
+
+  .subtitle-introduce h1 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+      border-bottom: 4px solid #19849B;
+      padding-bottom: 15px;
+  }
+
+  .subtitle-introduce h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      margin-top: 12px;
+      margin-bottom: 30px;
+  }
+
+  .subtitle-introduce p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+  }
+
+  .subtitle-introduce button {
+      background-color: #272A2F;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      width: 293px;
+      height: 50px;
+      border-color: #ffff;
+      margin-top: 30px;
+  }
+
+  .desc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 104px;
+      margin-bottom: 99px;
+  }
+
+  .portfolio {
+      flex-wrap: wrap;
+      width: 1038px;
+  }
+
+  .portfolio h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      margin-bottom: 15px;
+  }
+
+  .portfolio p {
+      width: 98%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      margin-bottom: 28px;
+  }
+
+
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 60px;
+  }
+
+  .light {
+      background-color: #19849B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 205px;
+  }
+
+  .light .small-photo {
+      max-width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 35px;
+  }
+
+  .footer-contact h2 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+  }
+
+  .footer-contact .number {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      margin-bottom: 6px;
+  }
+
+  .footer-contact .number:active::after {
+      text-decoration: none;
+  }
+
+  .footer-contact .adress {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+  }
+
+  .dark {
+      background-color: #16758A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      width: 100%;
+      height: 44px;
+  }
+
+  button:hover {
+      border: #19849B;
+      background-color: #19849B;
+      cursor: pointer;
+  }
+
+  button:active {
+      background-color: #19849B;
+  }
+
+
+
+  @media screen and (max-width: 900px) {
+      section {
+          padding: 0 20px;
+      }
+
+      .subtitle {
+          flex-wrap: wrap;
+          width: 100%;
+          height: 100%;
+      }
+
+      .subtitle .photo-main {
+          width: 762px;
+          height: 355px;
+          object-fit: cover;
+          margin-right: 0;
+          margin-bottom: 65px;
+      }
+
+      .subtitle .subtitle-introduce {
+          display: flex;
+          justify-content: start;
+          width: 762px;
+      }
+
+      .desc {
+          height: 100%;
+          margin-bottom: 0;
+      }
+
+      .portfolio {
+          display: flex;
+          justify-content: center;
+          width: 766px;
+      }
+  }
+
+  @media screen and (max-width: 376px) {
+      section {
+          padding: 0 50px;
+      }
+
+      .subtitle {
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .subtitle .photo-main {
+          width: 341px;
+          height: 355px;
+          object-fit: cover;
+          margin-right: 0;
+          margin-bottom: 65px;
+      }
+
+      .subtitle .subtitle-introduce {
+          display: flex;
+          justify-content: start;
+          width: 341px;
+      }
+
+      .subtitle button {
+          width: 341px;
+      }
+
+      .desc {
+          height: 100%;
+          margin-bottom: 0;
+      }
+
+      .portfolio {
+          width: 341px;
+      }
+
+      .portfolio p {
+          width: 341px;
+      }
+
+  }
